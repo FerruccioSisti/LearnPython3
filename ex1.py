@@ -1,0 +1,7 @@
+print("Hello World")
+print("This just asks me to use print 7 times")
+print("this is really lame so far")
+print("what a silly textbook")
+print("I hope I hit the good stuff soon")
+print("I'm running out of things to say")
+print("Python3 master race?")
