@@ -36,7 +36,8 @@ class Finished(Room):
 class PannittoHouse(Room):
     #Method for what happens when you enter the starting room
     def enter(self):
-        print(dedent("""wha.... whats going on here...
+        print(dedent("""
+            wha.... whats going on here...
             this looks like the Pannitto house...
             **You run to the nearest window and look outside
             It's the dead of night but you can tell by the surroundings that
@@ -209,3 +210,21 @@ class ParentsRoom(Room):
 
 class JuliasRoom(Room):
     #Method that gets called when user chooses Julia's room
+    def enter(self):
+        print(dedent("""
+            You head over in the direction of Julia's room
+            Reluctantly, you approach the door
+            You hear weird noises... those sound like grunts
+            You swing the door open and see REEEEEANN furiously powerlifting
+            You think to yourself "That guy is curling 420 lbs in each arm what
+            the FRICK"
+            Julia is sitting on her bed, watching this God among men do this
+            with ease
+            They notice you UwU
+
+            With the rage of 1000 suns, Julia rips the weights out of Rian's
+            gorgeous arms and chucks them at your face
+
+            My dude, you are deader than dead
+        """))
+        return "death"
