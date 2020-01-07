@@ -1,6 +1,5 @@
 #tester file for the project
 from nose.tools import *
-# from ex48 import lexicon
 from ex48 import lexicon
 
 def setup():
@@ -12,10 +11,10 @@ def teardown():
 def test_something():
     print("PLEASE")
 
-def test_directions():
-    assert_equal(lexicon.scan("north"), [("direction", "north")])
-    result = lexicon.scan("north south east")
-    assert_equal(result, [("direction", "north"), ("direction", "south"), ("direction", "east")])
+# def test_directions():
+#     assert_equal(lexicon.scan("north"), [("direction", "north")])
+#     result = lexicon.scan("north south east")
+#     assert_equal(result, [("direction", "north"), ("direction", "south"), ("direction", "east")])
 #
 # def test_verbs():
 #     assert_equal(lexicon.scan("go"), [("verb", "go")])

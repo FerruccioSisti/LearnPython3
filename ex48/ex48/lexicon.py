@@ -23,8 +23,9 @@ def conver_number(s):
     except ValueError:
         return None
 
-def scan(s):
+def scan(words):
     dic = []
+    s = words.split()
 
     for word in s:
         valid = True
@@ -46,5 +47,4 @@ def scan(s):
     return dic
 
 stuff = input("> ")
-words = stuff.split()
-print(scan(words))
+print(scan(stuff))
