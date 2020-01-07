@@ -1,6 +1,6 @@
 #tester file for the project
 from nose.tools import *
-import MAIN
+import NAME
 
 def setup():
     print("SETUP!")

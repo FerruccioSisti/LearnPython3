@@ -12,7 +12,7 @@ config = {
     "author_email": "ferrucciosisti@gmail.com",
     "version": "0.1",
     "install_requires": ["nose"],
-    "packages": ["MAIN"],
+    "packages": ["NAME"],
     "scripts": [],
     "name": "projectName"
 }
