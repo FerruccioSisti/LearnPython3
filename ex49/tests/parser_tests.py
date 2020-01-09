@@ -30,12 +30,18 @@ def test_parse_verb():
     x = parser.parse_verb([("verb", "eat")])
     assert_equal(x, ("verb", "eat"))
 
+def test_parse_notverb():
+    assert_raises(parser.ParserError, parser.parse_verb, [("noun", "bear")])
+
 def test_parse_object():
     x = parser.parse_object([("noun", "bear")])
     assert_equal(x, ("noun", "bear"))
 
     y = parser.parse_object([("direction", "north")])
     assert_equal(y, ("direction", "north"))
+
+def test_parse_notanobject():
+    assert_raises(parser.ParserError, parser.parse_object, [("verb", "eat")])
 
 def test_parse_subject():
     x = parser.parse_subject([("noun", "bear")])
@@ -44,6 +50,9 @@ def test_parse_subject():
     y = parser.parse_subject([("verb", "eat")])
     assert_equal(y, ("noun", "player"))
 
+def test_parse_notsubject():
+    assert_raises(parser.ParserError, parser.parse_subject, [("direction", "north")])
+    
 def test_parse_sentence():
     word_list = [("noun", "bear"), ("stop", "the"), ("verb", "eat"), ("noun", "honey")]
     subj = parser.parse_subject(word_list)
