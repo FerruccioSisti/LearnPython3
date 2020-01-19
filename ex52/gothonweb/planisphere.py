@@ -27,7 +27,7 @@ the Armory and about to pull a weapon to blast you.
 """)
 
 
-laser_weapon_armory = Room("Laser Weapon Armory", 30 """
+laser_weapon_armory = Room("Laser Weapon Armory", """
 Lucky for you they made you learn Gothon insults in the academy. You
 tell the one Gothon joke you know: Lbhe zbgure vf fb sng, jura fur fvgf
 nebhaq gur ubhfr, fur fvgf nebhaq gur ubhfr. The Gothon stops, tries
@@ -58,7 +58,7 @@ and don't want to set it off.
 """)
 
 
-escape_pod = Room("Escape Pod", 62 """
+escape_pod = Room("Escape Pod", """
 You point your blaster at the bomb under your arm and the Gothons put
 their hands up and start to sweat. You inch backward to the door, open
 it, and then carefully place the bomb on the floor, pointing your
@@ -75,7 +75,7 @@ which one do you take?
 """)
 
 
-the_end_winner = Room("The End", 80 """
+the_end_winner = Room("The End", """
 You jump into pod 2 and hit the eject button. The pod easily slides out
 into space heading to the planet below. As it flies to the planet, you
 look back and see your ship implode then explode like a bright star,
@@ -83,7 +83,7 @@ taking out the Gothon ship at the same time. You won!
 """)
 
 
-the_end_loser = Room("The End", 89 """
+the_end_loser = Room("The End", """
 You jump into a random pod and hit the eject button. The pod escapes
 out into the void of space, then implodes as the hull ruptures, crushing
 your body into jam jelly.

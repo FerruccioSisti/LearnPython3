@@ -14,7 +14,7 @@ def index():
 def game():
     room_name = session.get("room_name")
 
-    if request.method = "GET":
+    if request.method == "GET":
         if room_name:
             room = planisphere.load_room(room_name)
             return render_template("show_room.html", room = room)
@@ -35,5 +35,6 @@ def game():
         return redirect(url_for("game"))
 
 app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'
+
 if __name__ == "__main__":
     app.run()
